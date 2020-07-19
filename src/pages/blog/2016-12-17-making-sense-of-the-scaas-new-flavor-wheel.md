@@ -12,6 +12,139 @@ tags:
 ![flavor wheel](/img/flavor_wheel.jpg)
 
 ```
+<div id='product-component-1595129628808'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'madrone-mountain-coffee.myshopify.com',
+      storefrontAccessToken: 'c18a93b4bdeee5d56060bb4e9f8ce6ae',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4517781864521',
+        node: document.getElementById('product-component-1595129628808'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "buttonDestination": "modal",
+    "contents": {
+      "options": false
+    },
+    "text": {
+      "button": "View product"
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "googleFonts": [
+      "Open Sans"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold"
+      }
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+```
+
+```
+
+```
+
+
 
 <div id='product-component-1595129628808'></div>
 <script type="text/javascript">
@@ -141,11 +274,8 @@ tags:
 </script>
 
 
-```
 
-```
 
-```
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 
