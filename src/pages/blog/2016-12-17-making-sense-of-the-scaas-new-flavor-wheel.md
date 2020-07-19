@@ -11,7 +11,7 @@ tags:
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
-```
+
 <div id='product-component-1595129628808'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -138,12 +138,6 @@ tags:
 })();
 /*]]>*/
 </script>
-```
-
-```
-
-```
-
 
 
 <div id='product-component-1595129628808'></div>
